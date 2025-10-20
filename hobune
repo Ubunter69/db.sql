@@ -299,6 +299,27 @@ SELECT * FROM logi;
 ALTER TABLE logi
 ALTER COLUMN andmed VARCHAR(500);
 
+-------------------------------direktor---------------------
+--insert
+INSERT INTO toitumine (toitumine_id, toit_idfk, hobuse_idfk, kuupaev, tootaja_idfk)
+VALUES (3, 1, 1, '2000-11-21', 1);
+SELECT * FROM toitumine;
+SELECT * FROM logi;
+--update
+UPDATE toitumine
+SET toit_idfk = 1, kuupaev = '2020-12-12'
+WHERE toitumine_id = 1;
+--delete
+DELETE FROM toitumine
+WHERE toitumine_id = 100;
+SELECT * FROM toitumine;
+SELECT * FROM toitumine;
+select * from hobused;
+select * from toit;
+
+
+
+
 
 
 
